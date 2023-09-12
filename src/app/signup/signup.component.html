@@ -1,0 +1,40 @@
+
+<div style="height: 100%;">
+    <img src="https://techblog.bigbasket.com/wp-content/uploads/2018/08/BigBasket-App-Development-banner-FuGenX.jpg" alt="" srcset="" width="100%">
+</div>
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="signupModalLabel">Signup</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form #myForm = "ngForm" (ngSubmit)="doRegister(myForm.value)">
+                    <div class="mb-3">
+                        <label for="signup-email" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="signup-email" [(ngModel)] = "data.email" name = "email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="signup-mobile" class="col-form-label">Mobile Number:</label>
+                        <input type="text" class="form-control" id="signup-mobile"  [(ngModel)] = "data.number" name = "number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="signup-password" class="col-form-label">Password:</label>
+                        <input type="password" class="form-control" id="signup-password"  [(ngModel)] = "data.password" name = "password">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn continue">Signup</button>
+                        <div style="padding: 15px;">
+                            <p style="font-size: 13px; text-align: center; margin-top: 10px;">
+                                By continuing, I accept TCP-bigbasket’s <span><a href="#">Terms and Conditions</a></span> and <span><a href="#">Privacy Policy.</a></span></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+</div>

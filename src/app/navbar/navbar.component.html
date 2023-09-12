@@ -1,0 +1,55 @@
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div style="width:15% ;margin-top: 10px;" >
+        <a class="navbar-brand" routerLink = ""><img src="https://www.bbassets.com/static/v2697/custPage/build/content/img/bb_logo.png" alt="" width="100%" height="=20%"></a></div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+           
+          </li>
+          
+         
+        </ul> 
+         <div class = "form">
+        <form class="d-flex" role="search">
+          <input  type="search" placeholder="Search for Products...">
+          <button class="btnSearch" type="submit"><i class="bi bi-search"></i></button>
+        </form> 
+      </div> 
+
+      <button class="btn btn-white d-flex">
+         <div><i style = "font-size: 40px;" class = "bi bi-cart-plus-fill"  routerLink = "cart"></i></div>
+          <div class = "badge bg-danger" style="font-size: 10px;">{{getCartItemCount()}}</div>
+        </button>
+
+        <ul class="navbar-nav m6-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+           <!-- <a routerLink="login">Login</a> -->
+           <!-- <button type="button" class="btn" data-bs-toggle="modal"  routerLink="login" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Login</button>  -->
+           
+           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal"
+           data-bs-whatever="@mdo" routerLink="/login">Login</button>
+
+
+
+           <!-- <button type="button" class="btn" data-bs-toggle="modal"  routerLink="signup" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Signup</button> -->
+           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signupModal"
+           data-bs-whatever="@mdo" routerLink="/signup">Signup</button>
+   
+          
+
+          </li>
+          </ul>
+      
+        
+
+      </div>
+    </div>
+  </nav>  
+
+ 
+
+   

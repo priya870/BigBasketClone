@@ -1,0 +1,40 @@
+<div style="height: 100%;">
+    <img src="https://nextbigtechnology.com/wp-content/uploads/2020/12/banner-47.jpg" alt="" srcset="" width="100%">
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form #myLog = "ngForm" (ngSubmit)="doLogin(myLog.value)">
+
+                    <div class="mb-3">
+                        <label for="login-email" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="login-email" [(ngModel)] = "data.email" name = "email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="login-password" class="col-form-label">Password:</label>
+                        <input type="password" class="form-control" id="login-password" [(ngModel)] = "data.password" name = "password">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn continue">Login</button>
+                        <div style="padding: 20px;">
+                            <p style="font-size: 13px; text-align: center; margin-top: 10px;">
+                                By continuing, I accept TCP-bigbasket’s <span><a href="#">Terms and Conditions</a></span> and <span><a href="#">Privacy Policy.</a></span></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+

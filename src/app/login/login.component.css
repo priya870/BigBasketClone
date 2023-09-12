@@ -1,0 +1,20 @@
+.modal-content{
+
+    margin-top: 120px;
+}
+
+label{
+   color: green;
+}
+
+.continue{
+    background-color: rgb(63, 185, 63);
+    color: white;
+    width: 80%;
+  margin: auto;
+ 
+  
+}
+
+
+

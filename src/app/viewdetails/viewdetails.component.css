@@ -1,0 +1,65 @@
+
+img{
+    width: 90%;
+    /* height: 400px; */
+    object-fit: contain;
+
+}
+.viewDetails{
+    margin-top: 90px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+
+.category{
+    border-right: 1px solid rgb(223, 215, 215);
+   
+ 
+}
+.category p {
+    font-size: 13px;
+    line-height: 12px;
+}
+
+.category p:hover {
+    cursor: pointer;
+    color: green;
+}
+.imgdiv{
+    margin-left: 20px;
+}
+
+.d{
+    gap: 20px;
+    color: rgb(93, 92, 92);
+    
+}
+.d:hover{
+    color: green;
+    cursor: pointer;
+
+}
+
+.pack{
+    width:80%; display: flex; gap: 30px; justify-content: space-between; margin-top: 30px; border: 1px solid rgb(226, 225, 225);  background-color: #e6f3d3;
+    font-size: 14px;
+}
+
+.pack div ,.packs div{
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.pack i , .packs i{
+    color: white;
+    font-size: 20px;
+}
+
+.packs{
+    width:80%; display: flex; gap: 30px; justify-content: space-between; margin-top: 20px; border: 1px solid rgb(224, 224, 224);
+    font-size: 14px;
+
+}
+
+
+

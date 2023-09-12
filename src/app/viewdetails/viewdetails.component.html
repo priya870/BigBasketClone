@@ -1,0 +1,74 @@
+<div class="container">
+   <div class="mt-2 d-flex d">
+    <div><p>Home</p></div>
+    <div><p>Fruits & Vegitables</p></div>
+    <div><p>Fresh Vegitables</p></div>
+    <div><p>Root Vegitables</p></div>
+   </div>
+
+   
+    <div class="row viewDetails">
+
+        <div class="col-sm-3 category">
+            <h6 style="color: green;">Category</h6><hr>
+            <p>Fruits and Vegitables</p>
+            <p>Beans , Brinjals & Cauliflower</p>
+            <p>cucumber & Capsicum</p>
+            <p>Groud , Pumpkin , Drumstick</p>
+            <p>Tomato</p>
+            <p>Root Vegitables</p>
+            <p>Speciality</p>
+
+            <h6 style=" color: green; margin-top: 50px;">Brands</h6><hr>
+            <p>Fresho</p>
+            <p>Fresho Cucumber</p>
+           
+        </div>
+        <div class="col-sm-3 imgdiv">
+            <img src="{{productData?.image}}" alt="">
+        
+
+        <div class="mt-5">
+            <button class = "btn btn-primary">Buy Now</button> &nbsp;
+            <button class = "btn btn-success" (click) = "addToCarts(productData)">Add to Basket</button>
+        </div>
+    </div>
+    
+    <div class="col-sm-5 mt-5">
+        <div>
+            <h3>{{productData?.name}}</h3>
+          <h6> <strong>Price : </strong>{{productData?.price | currency:'INR'}}</h6>
+          <h6 style="color: red;">{{productData.offer}}</h6>
+          <p><strong>Delivery Time Taken :</strong> {{productData.delivery}}</p>
+       
+        </div>
+
+        <h6>Pack Size</h6>
+        <div class = "pack" >
+            <div>500g</div>
+            <div>{{productData?.price  | currency:'INR'}}</div>
+            <div><p style="color: rgb(198, 3, 3);">27% Off</p></div>
+            <button style="background-color: #a5cd39;border: none; padding: 14px;"><i class="bi bi-check-lg"></i></button>
+          
+        </div>
+
+        <div class = "packs">
+          <div>400g</div>
+          <div>{{productData?.price  | currency:'INR'}}</div>
+          <div><p style="color: rgb(199, 3, 3);">27% Off</p></div>
+          <button style="background-color:#005d19;border: none; padding: 14px;"><i class="bi bi-check-lg"></i></button>
+        
+      </div>
+
+       
+    </div>
+   
+</div>
+
+<app-minifooter></app-minifooter>
+</div>
+
+<!-- minifooter -->
+
+
+
